@@ -171,7 +171,7 @@ h2 {
 }
 
 
-.perks p {
+#skills, #experience, #education  {
     font-size: 16px;
     padding: 0px;
     margin: 10px 0px 20px 0px;
