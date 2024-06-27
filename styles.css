@@ -1,0 +1,515 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    height: 70px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.left {
+    display: block;
+    align-content: center;
+
+}
+
+.left a {
+    margin-right: 30px;
+    font-weight:600;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.left a:hover {
+    color: rgb(255, 121, 0);
+    cursor: pointer;
+}
+
+.btn-contact {
+    align-items: center;
+    margin-top: 10px;
+ background-color: rgb(255, 121, 0);
+ color: white;
+ border-radius: 7px;
+ cursor: pointer;
+ font-weight: 500;
+ text-transform: uppercase;
+ height: 45px;
+ width: 150px;
+ align-content: center;
+ padding-left: 22px;
+}
+
+.btn-contact:hover {
+    background-color: #f7eadd;
+    border: solid 1px rgb(255, 121, 0);
+    color:rgb(255, 121, 0);
+}
+
+header {
+    background-color:snow;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+header .hello {
+    width: 60%;
+    padding: 50px 35px 50px 50px;
+}
+
+.btn-portfolio {
+    display: block;
+margin-top: 20px;
+align-items: center;
+ background-color: rgb(255, 250, 250);
+ border-radius: 7px;
+ border: solid 1px black;
+ color: black;
+ cursor: pointer;
+ font-weight: 500;
+ font-size: 22px;
+ height: 60px;
+ width: 200px;
+ align-content: center;
+ text-align: center;
+}
+
+.btn-portfolio:hover {
+    background-color: rgb(241, 236, 236);
+}
+
+header .profile {
+    padding-left: 30px;
+    width: 40%;
+}
+
+header img {
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    width: 80%;
+}
+
+h1 {
+    font-size: 52px;
+}
+
+span {
+    color: rgb(255, 121, 0);
+    font-weight: bold;
+}
+
+.about-me {
+    background-color:ghostwhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-me p {
+    font-size: 20px;
+    font-weight: 300;
+    width: 60%;
+    margin-top: 25px;
+    line-height: 1.5;
+}
+
+.perks {
+    width: 60%;
+    padding: 0px;
+    margin-top: 25px;
+  /*  border: 1px solid black; */
+}
+
+.perks .row1, .row2, .row3 {
+    border-top: 1px grey solid;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.perks .row3 {
+    border-bottom: 1px grey solid;
+}
+
+
+.perks p {
+    font-size: 16px;
+    padding: 0px;
+    margin: 10px 0px 20px 0px;
+    width: auto;
+    display: none;
+}
+
+.perks h3 {
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+.portfolio {
+    background-color:snow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.portfolio .list {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.list img {
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.first, .second, .third {
+    width: 30%;
+    background-color: white;
+    box-shadow: 3px 3px 15px rgb(184, 184, 184);
+    border-radius: 7px;
+}
+
+/* .first:hover, .second:hover, .third:hover {
+    background-color: rgb(235, 235, 235);
+} 
+    */
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 25px;
+    font-family: "Inter", sans-serif;
+    color: rgb(32, 32, 32);
+}
+
+.portfolio p {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    margin: 0 25px;
+    line-height: 1.5;
+    color: rgb(32, 32, 32);
+}
+
+.portfolio button {
+    background-color: white;
+    border-radius: 7px;
+    border: solid 1px rgb(32, 32, 32);
+    color: rgb(32, 32, 32);
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 16px;
+    height: 40px;
+    width: 140px;
+    align-content: center;
+    text-align: center;
+    margin: 25px;
+}
+
+.portfolio button:hover {
+    background-color: rgb(241, 236, 236);
+}
+
+.contact {
+    background-color: rgb(250, 200, 157);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0;
+    align-content: center;
+}
+
+.contact h4 {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact .container {
+    width: 50%;
+}
+
+form input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 17px;
+    color: grey;
+}
+
+.submit {
+    background-color: rgb(255, 121, 0);
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.submit:hover {
+    background-color: #f7eadd;
+    border: solid 1px rgb(255, 121, 0);
+    color:rgb(255, 121, 0);
+}
+
+/* Thank you page css rules */
+.thank-you {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 80px;
+}
+
+.thank-you h4 {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    padding: 20px 0;
+    font-weight: 300;
+}
+
+.thank-you h5 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.thank-you h6 {
+    font-family: "Style Script", cursive;
+    font-size: 30px;
+    padding-top: 5px;
+    font-style: italic;
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    .logo {
+        height: 50px;
+    }
+
+    .left a {
+        margin-right: 20px;
+        font-size: 19px;
+        letter-spacing: 1px;
+    }
+
+    .btn-contact {
+        margin-top: 3px;
+    }
+    
+    
+    header .hello {
+        width: 100%;
+        padding: 60px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header img {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+
+    .btn-portfolio {
+        margin-top: 40px;
+        font-size: 20px;
+        height: 50px;
+        width: 180px;
+        text-align: center;
+    }
+    
+    .about-me p {
+        width: 80%;
+    }
+
+    .perks {
+        width: 80%;
+    }
+    
+    .perks h3 {
+        font-size: 20px;
+    }
+
+    .portfolio {
+        align-content: center;
+    }
+    
+    .portfolio .list {
+        width: 90%;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 30px;
+    }
+    
+    .list img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    .first, .second, .third {
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 60px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    .portfolio p {
+        font-size: 18px;
+    }
+    
+    .portfolio button {
+        font-size: 18px;
+        height: 45px;
+        width: 150px;
+    }
+    
+    .contact .container {
+        width: 75%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    nav {
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content:center;
+        align-content:flex-start;
+    }
+    
+    .logo {
+        margin-left: 10px;
+    }
+
+    .left {
+        margin-left: 15px;
+    }
+
+    .left a {
+        margin-right: 10px;
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+
+    .btn-contact {
+     display: none;
+    }
+
+    header .hello {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+  
+    .logo {
+        margin-left: 7px;
+    }
+
+    .left {
+        margin-left: 8px;
+    }
+
+    .left a {
+        margin-right: 10px;
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+
+    header .hello {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .about-me p {
+        font-size: 19px;
+        width: 80%;
+ 
+    }
+
+}
