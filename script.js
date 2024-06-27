@@ -38,9 +38,13 @@ function showEducation () {
     if (plusThree.innerHTML === '+') {
     plusThree.innerHTML = '-';
     educationText.style.display = 'block';
+    educationText.style.borderBottom = '1px grey solid';
+    rowThree.style.borderBottom = '0px grey solid';
+
     } else if (plusThree.innerHTML === '-') {
     plusThree.innerHTML = '+';
     educationText.style.display = 'none';
+    rowThree.style.borderBottom = '1px grey solid';
     } 
 }
 

@@ -159,7 +159,7 @@ h2 {
   /*  border: 1px solid black; */
 }
 
-.perks .row1, .row2, .row3 {
+.perks .row1, .row2 {
     border-top: 1px grey solid;
     display: flex;
     justify-content: space-between;
@@ -168,8 +168,11 @@ h2 {
 
 .perks .row3 {
     border-bottom: 1px grey solid;
+    border-top: 1px grey solid;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
 }
-
 
 #skills, #experience, #education  {
     font-size: 16px;
@@ -177,6 +180,10 @@ h2 {
     margin: 10px 0px 20px 0px;
     width: auto;
     display: none;
+}
+
+#education {
+    padding-bottom: 20px;
 }
 
 .perks h3 {
