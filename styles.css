@@ -345,6 +345,29 @@ form input {
     
 }
 
+@media only screen and (max-width: 1030px) {
+    
+    header .hello {
+        width: 60%;
+        padding: 50px 35px 50px 50px;
+    }
+
+    header .profile {
+        padding-left: 30px;
+        width: 40%;
+    }
+    
+    header img {
+        border-top-right-radius: 30%;
+        border-bottom-left-radius: 30%;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 43px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
 
     .logo {
