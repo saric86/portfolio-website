@@ -49,3 +49,30 @@ function showEducation () {
 }
 
 rowThree.addEventListener('click', showEducation);
+
+
+// Toggles mobile menu, opens menu when user clicks on the hamburger
+// Closes when user click on one of the links
+
+function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('show');
+}
+
+// Changes logo on mobile view to white or black depending on the screen size
+
+function updateLogo() {
+    const logoImage = document.querySelector('.logo img');
+    
+    if (window.innerWidth <= 660) {
+        logoImage.src = './resources/logo-white-transparent.png';
+    } else {
+        logoImage.src = './resources/logo-black-transparent.png';
+    }
+}
+
+// Updates logo when the page loads initially
+updateLogo();
+
+// Listen for window resize and update the logo. resize is the event listener, updateLogo is the executed function
+window.addEventListener('resize', updateLogo);

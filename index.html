@@ -16,7 +16,12 @@
 <body>
     <nav>
         <div class="logo">
-            <a href="./index.html"><img src="./resources/logo-black.png"></a>
+            <a href="./index.html"><img src="./resources/logo-black-transparent.png"></a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
         <div class="left">
             <a href="#about-me">About Me</a>
@@ -26,6 +31,16 @@
         </div>
         <a class="btn-contact" href="#contact">Contact me</a>
     </nav>
+
+    <div id="mobileMenu" class="mobile-menu" onclick="toggleMenu()">
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="https://www.linkedin.com/in/emirsaric/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/saric86" target="_blank">GitHub Us</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+    </div>
 
 <header>
     <div class="hello">
@@ -47,7 +62,7 @@
             <h3>Skills</h3>
             <h3 id="plus1">+</h3>
         </div>
-        <p id="skills">Web development, HTML, CSS, Javascript, Git, Node.js, Project managment, Digital marketing, Google Ads, Bing Ads, CMS-tools, E-mail marketing, Social media marekting, Growth marketing, E-commerce, Webb design</p>
+        <p id="skills">React, Redux, Javascript, HTML, CSS, Git, Node.js, Project managment, Digital marketing, Google Ads, Bing Ads, CMS-tools, E-mail marketing, Social media marektinggit, Growth marketing, E-commerce, Webb design</p>
     
         <div class="row2" id="row2">
             <h3>Experience</h3>
