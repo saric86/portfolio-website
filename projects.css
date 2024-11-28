@@ -1,0 +1,109 @@
+/* Projects (Portfolio) Styles */
+
+.portfolio {
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.portfolio .list, .list2, .list3 {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.list img, .list2 img, .list3 img {
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.first, .second, .third, .forth, .fifth, .sixth, .seven {
+    width: 30%;
+    background-color: white;
+    box-shadow: 3px 3px 15px rgb(184, 184, 184);
+    border-radius: 7px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 15px 25px;
+    font-family: "Inter", sans-serif;
+    color: rgb(32, 32, 32);
+}
+
+.portfolio p {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    margin: 0 25px;
+    line-height: 1.5;
+    color: rgb(32, 32, 32);
+}
+
+.portfolio button {
+    background-color: white;
+    border-radius: 7px;
+    border: solid 1px rgb(32, 32, 32);
+    color: rgb(32, 32, 32);
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 16px;
+    height: 40px;
+    width: 140px;
+    align-content: center;
+    text-align: center;
+    margin: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio button:hover {
+    background-color: rgb(241, 236, 236);
+}
+
+/* Responsive for projects */
+@media only screen and (max-width: 768px) {
+    .portfolio {
+        align-content: center;
+    }
+
+    .portfolio .list, .portfolio .list2 {
+        width: 90%;
+        flex-direction: column;
+        align-content: center;
+        margin-top: 30px;
+    }
+
+    .list img, .list2 img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .first, .second, .third, .forth, .fifth, .sixth, .seven {
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 60px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .portfolio p {
+        font-size: 18px;
+    }
+
+    .portfolio button {
+        font-size: 18px;
+        height: 45px;
+        width: 150px;
+    }
+}
